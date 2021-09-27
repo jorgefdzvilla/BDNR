@@ -21,7 +21,7 @@ db.tweets.aggregate([
 ##### 978 tweets
 
 
-Intervalo de 7:00:00 pm a 02:59:59 pm:
+Intervalo de 7:00:00 pm a 02:59:59 am:
 ```javascript
 db.tweets.aggregate([
   {$lookup: {from:"primarydialects","localField":"user.lang","foreignField":"lang","as":"language"}},
@@ -122,3 +122,5 @@ db.tweets.aggregate(
 	 	{"seguidores":-1}
 	});
 ```
+
+##### US & Canada
